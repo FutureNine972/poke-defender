@@ -1,0 +1,149 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1336801018171050027
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1336801018171050020}
+  - component: {fileID: 1336801018171050021}
+  - component: {fileID: 1336801018171050026}
+  - component: {fileID: 5047340998406047632}
+  m_Layer: 8
+  m_Name: Player
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1336801018171050020
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1336801018171050027}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -1.039, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &1336801018171050021
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1336801018171050027}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.33, y: 0.25}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 0
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!114 &1336801018171050026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1336801018171050027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25cc4f3429a2dba4f9ec34f552956dfc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 5
+  xUpPadding: 0.1
+  xDownPadding: 0.1
+  yUpPadding: 0.15
+  yDownPadding: 2.3
+  laserPrefab: {fileID: 7149594725735953023, guid: b017a5a30661a50449f12f19a232ef47,
+    type: 3}
+  projectileSpeed: 10
+  projectileFiringPeriod: 0.25
+  shiny: 0
+  pokemonChosen: 0
+  health: 300
+  explosionPrefab: {fileID: 984376653244841135, guid: b1979d13940623e48ade44a5088d4fca,
+    type: 3}
+  hitSound: {fileID: 8300000, guid: 8d9d6282367c67846a876a29ad8ebdd2, type: 3}
+  deathSound: {fileID: 8300000, guid: 35cf662ea8ac938459ac1287a1482af5, type: 3}
+  Venusaur: {fileID: 21300000, guid: 98d590d94f8d03b4cbb0015109e8fcf9, type: 3}
+  VenusaurShiny: {fileID: 21300000, guid: 4b7bc1be999cfd54d901f50c4dbae66b, type: 3}
+  Charizard: {fileID: 21300000, guid: dc908074ac96a6b4b95d363d81353527, type: 3}
+  CharizardShiny: {fileID: 21300000, guid: 4430905121a12e84c8745a6233f748fd, type: 3}
+  Blastoise: {fileID: 21300000, guid: 362fca01fc954454cb4e86f21e7cadaa, type: 3}
+  BlastoiseShiny: {fileID: 21300000, guid: b9c99e4cb07606e4d8bcd175b83f4672, type: 3}
+  Meganium: {fileID: 21300000, guid: f02e205fedbfd2148978707f1298ba02, type: 3}
+  MeganiumShiny: {fileID: 21300000, guid: 28a642bef21fcfa45934ab8365e828f3, type: 3}
+  Typhlosion: {fileID: 21300000, guid: b2987853c903dd94da034c959b1c9790, type: 3}
+  TyphlosionShiny: {fileID: 21300000, guid: 1f4da0fd85280504185779999d28224e, type: 3}
+  Feraligatr: {fileID: 21300000, guid: f9d1c940980f0164aa725904948452c9, type: 3}
+  FeraligatrShiny: {fileID: 21300000, guid: cf1b5d443d8c60c4ead8fb53fda020bb, type: 3}
+--- !u!61 &5047340998406047632
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1336801018171050027}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.0046186857, y: -0.0029317737}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.27, y: 0.25}
+    newSize: {x: 0.27, y: 0.25}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.22336283, y: 0.25117266}
+  m_EdgeRadius: 0
